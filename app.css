@@ -286,7 +286,7 @@ nav .start_btn {
     z-index:-1;
     top:30px;
     text-align:center;
-    background-color:hsl(0, 0%, 94%);
+    background-color:hsl(0, 9%, 98%);
 }
 
 .comment > div h3 {
@@ -300,7 +300,6 @@ nav .start_btn {
     color:hsl(227, 12%, 61%);
     font-size:0.7rem;
     padding:2rem 0;
-    width:85%;
     margin:0 auto;
 }
 
@@ -837,11 +836,18 @@ footer .container {
     }
 
     .media_scroller {
-        grid-auto-columns:41%;
+        grid-auto-flow:unset;
+        overflow-x:unset;
+        overscroll-behavior-inline:unset;
+        gap:0;
+        padding:0;
+        display:flex;
+        justify-content:space-evenly;
+        margin:3em 0;
     }
 
-    .comment > div p {
-        width:70%;
+    .comment {
+        width:20%;
     }
 
     #start_section h2 {
@@ -925,16 +931,12 @@ footer .container {
         font-size:0.9rem;
     }
 
-    .media_scroller {
-        grid-auto-columns:31%;
-    }
-
     .comment > div h3 {
         font-size:1rem;
     }
 
     .comment > div p {
-        font-size:0.9rem;
+        font-size:0.8rem;
     }
 
     .social_section {
@@ -1016,12 +1018,16 @@ footer .container {
     }
     
     .comment > div p {
-        font-size:1.1rem;
+        font-size:0.9rem;
     }
 
     #comments_section .start_btn {
         margin:2em auto;
         font-size:1rem;
+    }
+
+    #start_section {
+        margin-top:5em;
     }
 
     #start_section .start_btn {
