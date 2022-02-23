@@ -383,6 +383,7 @@ footer .container {
 }
 
 .email_form input {
+    width:100%;
     border-radius:20px;
     border:none;
     padding:0.5rem 1.5rem;
@@ -480,15 +481,21 @@ footer .container {
 
 @media screen and (min-width:500px) {
     body {
-        background-position:120px -60px;
+        background-size:80%;
+        background-position:240px -50px;
     }
 
     .main_info {
-        background-position:310px -20px;
+        background-size:40%;
+        background-position:470px 0px;
+    }
+
+    .email_form input {
+        width:50%;
     }
 
     #footer_first_nav {
-        padding:2em 0 2em 6em;
+        padding:2em 0 2em 8em;
     }
     
     #footer_second_nav {

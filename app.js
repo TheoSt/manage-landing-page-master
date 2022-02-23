@@ -19,11 +19,11 @@ dropdown_icon.addEventListener("click",function() {
 
     if(active_menu) {
         this.src = "images/icon-close.svg";
-        /* overlay_el.classList.add("active"); */
+        overlay_el.classList.add("active");
     }
     else {
         this.src = "images/icon-hamburger.svg";
-        /* overlay_el.classList.remove("active"); */
+        overlay_el.classList.remove("active");
     }
 
     navbar_el.classList.toggle("active");
